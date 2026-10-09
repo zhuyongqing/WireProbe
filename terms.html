@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terms of Service</title>
+<style>
+  /* Light / dark follow the system. Colours go through variables so both themes stay legible. */
+  :root {
+    color-scheme: light dark;
+    --fg: #1c1c1e;
+    --fg-muted: #6c6c70;
+    --bg: #ffffff;
+    --rule: rgba(60, 60, 67, 0.29);
+    --surface: #f2f2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f2f2f7;
+      --fg-muted: #9a9aa0;
+      --bg: #000000;
+      --rule: rgba(235, 235, 245, 0.24);
+      --surface: #1c1c1e;
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    /* -apple-system-body tracks the system text-size setting */
+    font: -apple-system-body;
+    margin: 0;
+    padding: 20px 20px 64px;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.75;
+    word-break: break-word;
+  }
+
+  h1 {
+    font-size: 1.45em;
+    line-height: 1.35;
+    margin: 0 0 0.35em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    margin: 1.9em 0 0.5em;
+    padding-top: 1.1em;
+    border-top: 1px solid var(--rule);
+  }
+
+  p, li { margin: 0.6em 0; }
+  ul, ol { padding-left: 1.25em; }
+
+  .meta {
+    color: var(--fg-muted);
+    font-size: 0.88em;
+    margin-bottom: 1.5em;
+  }
+
+  strong { font-weight: 600; }
+
+  .callout {
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 1.1em 0;
+  }
+  .callout > p:first-child { margin-top: 0; }
+  .callout > p:last-child { margin-bottom: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  th {
+    font-weight: 600;
+    color: var(--fg-muted);
+    font-size: 0.9em;
+  }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--surface);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  pre {
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 12px 14px;
+    overflow-x: auto;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+
+  a { color: inherit; }
+
+  footer {
+    margin-top: 2.5em;
+    padding-top: 1.2em;
+    border-top: 1px solid var(--rule);
+    color: var(--fg-muted);
+    font-size: 0.85em;
+  }
+</style>
+</head>
+<body>
+
+<h1>Terms of Service</h1>
+<p class="meta">Effective date: 9 October 2026 &nbsp;·&nbsp; Version 1.0</p>
+
+<h2>1. About this agreement</h2>
+<p>This agreement is between you and the developer of <strong>WireProbe</strong> ("the App") and governs your use of the App. By downloading, installing or using the App you confirm that you have read and accepted these terms. If you do not agree, please stop using the App and delete it.</p>
+
+<h2>2. What the App is</h2>
+<p>The App is a developer tool for building HTTP requests, inspecting responses, comparing the same request over different network paths, debugging WebSocket connections and importing API descriptions. It runs entirely on your device.</p>
+<div class="callout">
+  <p><strong>We do not operate any server for the App.</strong> There is no account, no cloud sync and no backend that receives your data. See the Privacy Policy for details.</p>
+</div>
+
+<h2>3. Licence</h2>
+<p>Subject to these terms, you are granted a non-exclusive, non-transferable, revocable licence to use the App on devices you own or control, as permitted by the App Store Terms of Service.</p>
+
+<h2>4. Your responsibilities</h2>
+<ol>
+  <li><strong>Only send requests to systems you are authorised to access.</strong> Scanning, probing, load-testing or attacking systems without permission may be unlawful, and you are solely responsible for your use.</li>
+  <li><strong>You are responsible for what you put in a request.</strong> URLs, headers, tokens and credentials you enter are sent to the destination you specify. Do not enter secrets you would not want stored on the device.</li>
+  <li>When importing third-party API descriptions or capture files, make sure you have the right to use them.</li>
+  <li>Do not reverse-engineer, modify, redistribute or circumvent the normal operation of the App.</li>
+</ol>
+
+<h2>5. Disclaimer and limitation of liability</h2>
+<ol>
+  <li>The App is provided <strong>"as is"</strong>, without warranties of any kind, express or implied, including fitness for a particular purpose or uninterrupted availability.</li>
+  <li>Timing breakdowns, certificate information, network-type labels and similar output are <strong>informational only</strong> and are not a professional opinion or a guarantee of accuracy.</li>
+  <li>To the maximum extent permitted by law, the developer is not liable for any direct or indirect loss arising from the use of, or inability to use, the App.</li>
+  <li>You understand that the outcome of any request depends on your device, your network and the destination server. We do not control and are not responsible for those.</li>
+</ol>
+
+<h2>6. Intellectual property</h2>
+<p>The App's design, icon, source code and documentation remain the property of the developer. All rights not expressly granted are reserved.</p>
+
+<h2>7. Changes to these terms</h2>
+<p>These terms may be updated from time to time. The current version is always available inside the App, and changes take effect when published. Continued use after a change means you accept the updated terms.</p>
+
+<h2>8. Governing law</h2>
+<p>These terms are governed by the laws of the People's Republic of China. Any dispute arising from them should first be raised with us directly so that we can try to resolve it.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about these terms: <a href="mailto:gameworld614@gmail.com">gameworld614@gmail.com</a></p>
+
+<footer>WireProbe &nbsp;·&nbsp; Terms of Service v1.0</footer>
+
+</body>
+</html>
